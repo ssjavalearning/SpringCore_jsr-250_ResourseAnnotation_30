@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<bean id="employee" class="com.suraj.spring.beans.Employee">
+		<property name="employeeId" value="1001" />
+		<property name="employeeName" value="Suraj Singh" />
+	</bean>
+	
+	<bean id="pancard1" class="com.suraj.spring.beans.Pancard">
+		<property name="panHolderName" value="Suraj Singh" />
+		<property name="panNum" value="DHX1749P" />
+	</bean>
+	
+	<bean id="pancard2" class="com.suraj.spring.beans.Pancard">
+		<property name="panHolderName" value="Raja Ram" />
+		<property name="panNum" value="DHX1908O" />
+	</bean>
+	<context:annotation-config />
+</beans>
